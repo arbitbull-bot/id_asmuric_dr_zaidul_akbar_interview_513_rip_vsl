@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="id">
+
+<head>
+	<meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<title>Asmuric</title>
+	<link rel="shortcut icon" href="./images/fav.ico" type="image/x-icon">	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+<script src="../js/preview.js"></script>
+</head>
+
+<body class="timer-different">
+	<header class="header block wave">
+		<div class="wrapper">
+			<div class="header__top">
+				<div class="header__logo">
+					<a class="logo-link" href="#header-bottom">
+					<span class="logo">asmuric</span> <b>|</b> <span class="logo-text">pesan dengan harga diskon</span>
+					</a>
+				</div>
+				<div class="header__links">
+					<a href="#order" class="header__link">Pembayaran dan pengiriman</a>
+					<a href="#consist" class="header__link">Komposisi alami</a>
+					<a href="#reviews" class="header__link">Komentar</a>
+				</div>
+			</div>
+			<div class="header__content">
+				<div class="header__left">
+					<div class="header__title title text__left">
+						Mengurangi rasa sakit dan peradangan pada sendi
+					</div>
+					<div class="header__subtitle subtitle text__left">
+						Dengan mentol yang legendaris
+					</div>
+					<ul class="header__list">
+						<li class="header__item"> Membantu<span class="text__medium"> meringankan<br>rasa sakit</span>
+							dan pembengkakan </li>
+						<li class="header__item"> Membantu<span class="text__medium"> meredakan peradangan</span><br>
+							pada sendi </li>
+						<li class="header__item"> Mempercepat<span class="text__medium"> pemulihan</span><br> sendi
+						</li>
+					</ul>
+					<div class="quality">
+						<div class="quality-left">
+						</div>
+						<div class="quality-right">
+						</div>
+					</div>
+				</div>
+				<div class="header__center">
+					<div class="header__pack diskon-pack">
+						<img src="./images/product.png" alt="">
+					</div>
+					</div>
+				<div class="header__right">
+					<div class="header__top-form">
+						<h3 class="form-title">Pesan <br><span class="form-blue">dengan diskon</span></h3>
+						<div class="header__price">
+							<div class="old-price">
+								<div class="price-title">
+									Harga lama
+								</div>
+								<div class="price">
+									<span class="x_price_previous prev-price al-cost-promo">Rp. 780000</span>
+								</div>
+							</div>
+							<div class="new-price">
+								<div class="price-title form-blue">
+									Harga baru
+								</div>
+								<div class="price">
+									<span class="x_price_current price-new al-cost">Rp. 390000</span>
+								</div>
+							</div>
+						</div>
+						<div class="price-border"></div>
+						<h4 class="time-left">Paket yang tersisa sampai <br>Promosi berakhir</h4>
+						<div id="timer" class="timer">
+							<div class="timer-block">
+								<span class="hours">0</span>
+								<span class="hours">0</span>
+							</div>
+							<div class="timer-block">
+								<span class="minutes">0</span>
+								<span class="minutes">5</span>
+							</div>
+							<div class="timer-block">
+								<span class="seconds">0</span>
+								<span class="seconds">0</span>
+							</div>
+						</div>
+						<a href="#header-bottom" class="btn ever-popup-btn">Pesan</a>
+						<p class="igor-para-underform">
+							Diskon <strong style="color:red">50%</strong> berlaku hingga
+							<strong style="color:red">
+								<script> DAYS = 0; dayMilliseconds = 24 * 60 * 60 * 1000; var currentDate = new Date(); currentDate.setTime(currentDate.getTime() - dayMilliseconds * DAYS); yyyy = currentDate.getFullYear(); mm = currentDate.getMonth() + 1; dd = currentDate.getDate(); if (mm < 10) { mm = '0' + mm; } if (dd < 10) { dd = '0' + dd; } document.write(dd + '.' + mm + '.' + yyyy)</script>
+							</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="state block">
+		<div class="wrapper">
+			<h2 class="title"> Apa keadaan sendi Anda? </h2>
+			<div class="subtitle">
+				Periksa diri Anda jika memiliki gejala-gejala ini
+			</div>
+			<div class="state-box">
+				<div class="state-box__item">
+					<div class="state-box__img">
+						<img load="lazy" src="./images/img-state1.png" alt="">
+						<span class="state-box__circ1"></span>
+						<span class="state-box__circ2"></span>
+						<span class="state-box__circ3"></span>
+					</div>
+					<h3 class="state-box__text"> Bunyi retak ketika <br>Anda bergerak </h3>
+				</div>
+				<div class="state-box__item state-box__item_second">
+					<div class="state-box__img">
+						<img load="lazy" src="./images/img-state2.png" alt="">
+						<span class="state-box__circ1"></span>
+						<span class="state-box__circ2"></span>
+						<span class="state-box__circ3"></span>
+					</div>
+					<h3 class="state-box__text"> Badan kaku pada <br> pagi hari </h3>
+				</div>
+				<div class="state-box__item">
+					<div class="state-box__img">
+						<img load="lazy" src="./images/img-state3.png" alt="">
+						<span class="state-box__circ1"></span>
+						<span class="state-box__circ2"></span>
+						<span class="state-box__circ3"></span>
+					</div>
+					<h3 class="state-box__text"> Nyeri sendi <br>ketika cuaca berubah </h3>
+				</div>
+				<div class="state-box__item state-box__item_bottom">
+					<div class="state-box__img">
+						<img load="lazy" src="./images/img-state4.png" alt="">
+						<span class="state-box__circ1"></span>
+						<span class="state-box__circ2"></span>
+						<span class="state-box__circ3"></span>
+					</div>
+					<h3 class="state-box__text"> Bengkak atau kemerahan <br>di area sendi </h3>
+				</div>
+				<div class="state-box__item state-box__item_second state-box__item_bottom">
+					<div class="state-box__img">
+						<img load="lazy" src="./images/img-state5.png" alt="">
+						<span class="state-box__circ1"></span>
+						<span class="state-box__circ2"></span>
+						<span class="state-box__circ3"></span>
+					</div>
+					<h3 class="state-box__text"> Rasa nyeri <br>pada sendi </h3>
+				</div>
+				<div class="state-box__item state-box__item_bottom">
+					<div class="state-box__img">
+						<img load="lazy" src="./images/img-state6.png" alt="">
+						<span class="state-box__circ1"></span>
+						<span class="state-box__circ2"></span>
+						<span class="state-box__circ3"></span>
+					</div>
+					<h3 class="state-box__text"> Bengkak di <br>sendi </h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="diseas block wave">
+		<div class="wrapper">
+			<h2 class="title"> Akibat dari nyeri sendi yang di abaikan</h2>
+			<div class="disease-list">
+				<div class="disease-list__item">
+					<img load="lazy" src="./images/img-disease1.png" alt="disease" class="disease-list__img">
+					<p class="disease-list__text">Sulit tidur dikarenakan rasa sakit di sendi yang sangat parah </p>
+				</div>
+				<div class="disease-list__item disease-list__item_second">
+					<img load="lazy" src="./images/img-disease2.png" alt="disease" class="disease-list__img">
+					<p class="disease-list__text">Aktivitas terbatas karena rasa sakit yang terlalu kuat ketika
+						bergerak. </p>
+				</div>
+				<div class="disease-list__item">
+					<img load="lazy" src="./images/img-disease3.png" alt="disease" class="disease-list__img">
+					<p class="disease-list__text"> Tanpa terapi yang tepat untuk <br>kasus selanjutnya akan dibutuhkan
+						operasi <br>penggantian sendi </p>
+				</div>
+			</div>
+			<div class="subtitle">
+				“Jangan sepelekan masalah persendian dan jangan <br> sampai terlambat untuk menyelamatkan sendi Anda”
+			</div>
+			<a href="#header-bottom" class="btn ever-popup-btn">Pesan</a>
+		</div>
+	</div>
+	<div class="effect block">
+		<div class="wrapper">
+			<h2 class="title"> <span class="title-orange">Asmuric</span> memulihkan sendi Anda dengan formula dari
+				Mentol </h2>
+			<div class="effect-list">
+				<div class="effect-list__item">
+					<div class="effect-list__img-box">
+						<img load="lazy" src="./images/img-effect1.png" alt="effect">
+						<span class="effect-list__circle"></span>
+						<span class="effect-list__number">1</span>
+					</div>
+					<h3 class="effect-list__title"> Rasa nyeri </h3>
+					<p class="effect-list__text"> berkurang mulai dari hari pertama penggunaan</p>
+				</div>
+				<div class="effect-list__item effect-list__item_second">
+					<div class="effect-list__img-box">
+						<img load="lazy" src="./images/img-effect2.png" alt="effect">
+						<span class="effect-list__circle"></span>
+						<span class="effect-list__number">2</span>
+					</div>
+					<h3 class="effect-list__title"> Ini membuat Anda lebih mudah bergerak </h3>
+					<p class="effect-list__text"> karena meningkatnya peredaran <br>darah di persendian </p>
+				</div>
+				<div class="effect-list__item">
+					<div class="effect-list__img-box">
+						<img load="lazy" src="./images/img-effect3.png" alt="effect">
+						<span class="effect-list__circle"></span>
+						<span class="effect-list__number">3</span>
+					</div>
+					<h3 class="effect-list__title"> Mencegah perkembangan <br>komplikasi serius dan </h3>
+					<p class="effect-list__text"> penyakit sendi </p>
+				</div>
+				<div style="width: 100%;height: 0;" class="extra-block"></div>
+				<img load="lazy" src="./images/product.png" alt="Flex Active" class="effect__pack">
+			</div>
+		</div>
+	</div>
+	<div class="shea block wave">
+		<div class="wrapper">
+			<h2 class="title"> Mengapa <span class="title-orange">Mentol</span> merupakan salah satu produk paling
+				efektif untuk penyakit sendi </h2>
+
+			<div class="shea-box">
+				<div class="shea-box__img">
+					<img load="lazy" src="./images/img-shea.png" alt="">
+				</div>
+				<div class="shea-box__text">
+					<p class="shea-box__text1">Di Korea dan Jepang, mentol dianggap legendaris. Tumbuhan yang dapat hidup
+						dalam lingkungan alaminya meskipun cuacanya berubah-ubah. </p>
+					<p class="shea-box__text2"> Ini adalah ritual kuno selama ribuan tahun, para wanita Korea dan Jepang
+						mengumpulkan dan menggunakannya untuk menghilangkan luka, peradangan, cedera sendi dan
+						ligamen. </p>
+					<p class="shea-box__text3"> Teknologi modern telah meningkatkan kandungan dari ekstrak legendaris
+						ini, dan membuat komposisi tumbuhan ini menjadi lebih bersih dan dapat disimpan dalam konsentrasi yang
+						paling tinggi.</p>
+				</div>
+			</div>
+			<a href="#header-bottom" class="btn ever-popup-btn">Pesan Asmuric</a>
+		</div>
+	</div>
+	<div class="consist block" id="consist">
+		<div class="wrapper">
+			<h2 class="title">Komposisi alami penting dari <span class="title-orange">Asmuric </span> yang dapat
+				memulihkan kesehatan sendi</h2>
+			<div class="consist__content">
+				<div class="consist__item  consist__item_center">
+					<div class="consist__img">
+						<img load="lazy" src="./images/img-consist-2.png" alt="">
+					</div>
+					<h4 class="consist__title">Mentol</h4>
+					<p class="consist__descr">Terkenal di dunia medis dan telah terbukti menghilangkan peradangan dan
+						bengkak bagi orang dengan nyeri sendi, rematik, sakit pinggang, terkilir, otot kaku,
+						pegal-pegal, dan nyeri saraf. </p>
+				</div>
+
+			</div>
+			<div class="consist-sert">
+				<img class="mid-quality-1" src="./images/img-mid-quality-1.png" alt="quality">
+				<div class="consist-sert__item">
+
+				</div>
+				<img class="mid-quality-2" src="./images/img-mid-quality-2.png" alt="quality ">
+			</div>
+		</div>
+	</div>
+	<div class="use block wave">
+		<div class="wrapper">
+			<h2 class="title">Cara pakai</h2>
+			<div class="use__content">
+				<div class="use__item">
+					<div class="use__img">
+						<img src="./images/img-use-1.png" alt="">
+					</div>
+					<p class="use__descr">Minum 1 kapsul dengan segelas air </p>
+				</div>
+				<div class="use__item">
+					<div class="use__img">
+						<img src="./images/img-use-2.png" alt="">
+					</div>
+					<p class="use__descr"> Ikuti intruksi penggunaan kapsul </p>
+				</div>
+				<div class="use__item">
+					<div class="use__img">
+						<img src="./images/img-use-3.png" alt="">
+					</div>
+					<p class="use__descr"> Ulangi profilaksis setelah 6 hari </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="reviews block" id="reviews">
+		<div class="wrapper">
+			<h2 class="title"> Komentar </h2>
+			<p class="subtitle"><em>Hasil dapat bervariasi tergantung dari kondisi tubuh setiap individu.</em></p>
+			<div class="slider-box">
+				<div class="slider">
+					<img load="lazy" src="./images/img-review1.png" alt="slider">
+					<p class="slider__name"> Talita, 38 tahun, Jakarta </p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Keesokan harinya, pembengkakan sudah berkurang" </p>
+						<p class="slider__text"> Dulu saya ragu dengan pil ini karena takut ada banyak bahan kimia di
+							dalamnya. Saat saya mengeluh kepada Ibu saya karena lutut saya sakit waktu berjongkok dan
+							malam harinya, Ibu saya memberikan pil ini <b><a href="#header-bottom">Asmuric</a></b> kepada saya dan
+							memberitahu untuk mengikuti instruksinya. Pembengkakan saya pun menghilang keesokan harinya,
+							setelah sebulan tmengkonsumsinya, sakit lutut saya sudah tidak pernah kembali lagi. </p>
+					</div>
+					<span class="slider__detector"></span>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+				<div class="slider">
+					<img load="lazy" src="./images/img-review2.png" alt="slider">
+					<p class="slider__name">Melati, 23 tahun, Padang</p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Rasa nyeri punggung nenek aku hilang setelah 1 bulan" </p>
+						<p class="slider__text"> Aku mahasiswa kedokteran dan aku tahu betul soal terapi sendi. Ketika
+							aku baca informasi tentang kapsul <b><a href="#header-bottom">Asmuric</a></b>, aku baca kapsul ini dengan teliti dari komposisi hingga efeknya. Aku terkejut dengan betapa hebatnya
+							mentol ini saat dikombinasikan dengan komponen alami lainnya. Aku pun berkonsultasi dengan
+							dosen kami dan membawakan kapsulnya, beliau bilang memang ini produk bagus. Aku pun langsung
+							memberikan kapsul ini ke nenekku dan nenek ku mulai merasa lebih baik, padahal hanya memakai
+							beberapa kali saja. Kata nenek, sakit punggung nya hilang pada hari ke-32 . Semoga nenek ku
+							akan selalu sehat dan panjang umur.
+						</p>
+					</div>
+					<div class="slider__detector"></div>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+				<div class="slider">
+					<img load="lazy" src="./images/img-review3.png" alt="slider">
+					<p class="slider__name"> Rita, 25 tahun, Makasar </p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Lutut telah pulih sepenuhnya” </p>
+						<p class="slider__text"> Saya menderita nyeri lutut selama 2 tahun. Atas saran dari teman-teman
+							saya serta para ahli, saya sudah mencoba 8 produk untuk menyembuhkan sendi dan tak ada
+							satupun yang membantu. Dokter bilang harus segera dioperasi, akhirnya saya dan suami saya
+							pun harus menjual mobil kami untuk biaya operasi. Saat kami menjual mobil kami, seorang
+							calon pembeli ingin mengecek mobilnya dan suami saya bilang jika dia membutuhkan uang nya
+							untuk biaya operasi saya. Ternyata calon pembeli kami adalah ahli ortopedi dan menyarankan
+							saya menggunakan <b><a href="#header-bottom">Asmuric</a></b>. Sakit sendi saya langsung
+							hilang dalam 2 minggu, dan kami pun senang karena tidak perlu menjual mobil kami.
+						</p>
+					</div>
+					<div class="slider__detector"></div>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+				<div class="slider">
+					<img load="lazy" src="./images/img-review4.png" alt="slider">
+					<p class="slider__name"> Raja, 54 tahun, Batam </p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Rasa sakit pada jari-jari hilang setelah 30 hari penggunaan” </p>
+						<p class="slider__text"> Tangan, jari, dan lutut saya sakit. Dari dulu saya yakin jika pil yang dulu saya gunakan pasti
+							buruk untuk kesehatan. Saya mencari cara yang tidak berbahaya dan saya menemukan <b><a href="#header-bottom">Asmuric</a></b>. Awalnya saya berpikir jika itu mahal, tetapi
+							setelah saya hitung berapa yang sudah saya keluarkan untuk membeli krim lain yang harus
+							dioleskan selama 6 bulan. Saya bisa menghemat 3 kali lipat dengan <b><a href="#header-bottom">Asmuric</a></b>! Saya membeli pil ini untuk saya dan adik
+							saya, dan nyeri di jari saya hilang setelah 4 minggu!
+						</p>
+					</div>
+					<div class="slider__detector"></div>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+				<div class="slider">
+					<img load="lazy" src="./images/img-review5.png" alt="slider">
+					<p class="slider__name"> Batari, 59 tahun, Jakarta </p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Hal yang paling menyenangkan adalah saya tidak lagi bergantung pada
+							dokter" </p>
+						<p class="slider__text"> Jari saya sudah nyeri selama 6 tahun. Sendi nya meradang dan sakit
+							walaupun kadang-kadang sakitnya hilang hanya sebentar. Saya sudah coba semua cara namun yang
+							ada kondisi saya malah makin memburuk. Akhirnya saya pun setuju untuk melakukan suntik di
+							sendi, prosedur yang mengerikan dan harus diulangi secara teratur. Akhir-akhir ini saya
+							melihat <b><a href="#header-bottom">Asmuric</a></b> dari artikel lain dan langsung
+							memesannya. Saya menggunakannya secara teratur selama sebulan dan setelah seminggu jari-jari
+							saya sudah tidak sakit lagi. Saya merasa seperti bisa bermain piano seperti waktu saya masih
+							muda! Hal yang terbaik adalah saya sudah tidak bergantung dengan dokter lagi. </p>
+					</div>
+					<div class="slider__detector"></div>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+				<div class="slider">
+					<img load="lazy" src="./images/img-review6.png" alt="slider">
+					<p class="slider__name"> Mawar, 39 tahun, Kuta </p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Saya merasa bertenaga lagi" </p>
+						<p class="slider__text"> Saya menggunakan <b><a href="#header-bottom">Asmuric</a></b> karena
+							osteochondrosis. Saya suka kapsul ini karena jadi mudah untuk menggunakannya dan membawanya
+							kemana saja. Tidak ada bahan-bahan berbahaya di dalamnya. Salah satu komposisinya adalah
+							mentol. Kapsul ini efektif, saya merasa lebih energik dan bisa bergerak bebas! Masalah sudah
+							tidak terjadi lagi!</p>
+					</div>
+					<div class="slider__detector"></div>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+				<div class="slider">
+					<img load="lazy" src="./images/img-review7.png" alt="slider">
+					<p class="slider__name"> Kasih, 28 tahun, Semarang </p>
+					<div class="slider__body">
+						<p class="slider__subject"> "Pil yang hebat!" </p>
+						<p class="slider__text"> Siapa sangka jika satu kali jatuh bisa mengubah hidupmu untuk selamanya. Saya
+							jatuh dan sendi siku saya terluka parah. Aku sudah mengobatinya tetapi kadang-kadang masih
+							merasa sakit, terutama saat perubahan cuaca atau iklim, rasanya sakit sekali. Pacarku
+							akhirnya memberikan link tentang <b><a href="#header-bottom">Asmuric</a></b> dan saya
+							tertarik mencoba dan membelinya. Pil yang hebat! Rasa sakitnya sudah hilang, sudah sebulan
+							berlalu sejak terakhir kali menggunakan pil tersebut dan rasa sakitnya tidak kembali lagi. </p>
+					</div>
+					<div class="slider__detector"></div>
+					<span class="slider__table"></span>
+					<span class="slider__plus"> </span>
+				</div>
+			</div>
+		</div>
+		<div class="order block">
+			<div class="wrapper">
+				<div class="orderline"></div>
+				<h2 class="title" id="order"> Cara pesan dan pengiriman <span class="title-orange">Asmuric</span> </h2>
+				<div class="order-box">
+					<div class="order__item">
+						<div class="order__img-box">
+							<img load="lazy" src="./images/img-order1.png" alt="order">
+							<span class="order__circle"></span>
+							<span class="order__number">1</span>
+						</div>
+						<p class="order__name"> Isi sesuai urutannya </p>
+						<p class="order__text"> Masukkan nama dan nomor telepon Anda </p>
+					</div>
+					<div class="order__item order__item_second">
+						<div class="order__img-box">
+							<img load="lazy" src="./images/img-order2.png" alt="order">
+							<span class="order__circle"></span>
+							<span class="order__number">2</span>
+						</div>
+						<p class="order__name"> Jawab panggilan operator </p>
+						<p class="order__text"> Konsultan kami akan mengklarifikasi alamat Anda dan menjawab semua
+							pertanyaan tentang Asmuric </p>
+					</div>
+					<div class="order__item">
+						<div class="order__img-box">
+							<img load="lazy" src="./images/img-order3.png" alt="order">
+							<span class="order__circle"></span>
+							<span class="order__number">3</span>
+						</div>
+						<p class="order__name"> Anda dapat membayar setelah barang diterima </p>
+						<p class="order__text"> Tidak ada pembayaran di awal! </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom header block wave">
+			<div class="wrapper">
+				<div class="header__content">
+					<div class="header__left">
+						<div class="header__title title text__left">
+							Mengurangi rasa sakit dan peradangan pada sendi
+						</div>
+						<div class="header__subtitle subtitle text__left">
+							Dengan mentol yang legendaris
+						</div>
+						<ul class="header__list">
+							<li class="header__item"> Membantu <span class="text__medium">meringankan <br>rasa sakit
+								</span>dan pembengkakan </li>
+							<li class="header__item"> Membantu <span class="text__medium">meredakan peradangan
+								</span>pada sendi </li>
+							<li class="header__item"> Mempercepat <span class="text__medium">pemulihan</span><br> sendi
+							</li>
+						</ul>
+						<div class="quality">
+							<div class="quality-left">
+							</div>
+							<div class="quality-right">
+							</div>
+						</div>
+					</div>
+					<div class="header__center">
+						<div class="header__pack diskon-pack">
+							<img load="lazy" src="./images/product.png" alt="">
+						</div>
+						</div>
+					<div class="header__right" id="header-bottom">
+						<div class="header__top-form">
+							<h3 class="form-title">Cepat pesan<br>dengan harga diskon<br><span class="form-blue">sampai
+									<script> var currentDate = new Date(); currentDate.setTime(currentDate.getTime() - dayMilliseconds * DAYS); yyyy = currentDate.getFullYear(); mm = currentDate.getMonth() + 1; dd = currentDate.getDate(); if (mm < 10) { mm = '0' + mm; } if (dd < 10) { dd = '0' + dd; } document.write(dd + '.' + mm + '.' + yyyy)</script>
+								</span>
+
+							</h3>
+							<div class="header__price">
+								<div class="old-price">
+									<div class="price-title">
+										Harga lama
+									</div>
+									<div class="price">
+										<span class="x_price_previous prev-price al-cost-promo">Rp. 780000</span>
+									</div>
+								</div>
+								<div class="new-price">
+									<div class="price-title">
+										Harga baru
+									</div>
+									<div class="price">
+										<span class="x_price_current price-new al-cost">Rp. 390000</span>
+									</div>
+								</div>
+							</div>
+							<h4 style="margin-bottom :30px" class="time-left"> Paket promosi tersisa: <span class="js-countdown lastpack">60</span></h4>
+							<form id="buyForm" class="x_order_form buyForm orderForm al-form" action="" method="post">
+								<input type="hidden" name="subid5" value="back_vsl_form">
+								<input type="hidden" name="click_id" value="">
+								<div style="margin-bottom :10px">
+									<input class="form-control input-form" name="name" id="name" minlength="2" placeholder="Nama  (wajib) " type="text" required="">
+								</div>
+								<div style="margin-bottom :10px">
+									<input class="form-control input-form " name="phone" id="phone" minlength="8" maxlength="16" placeholder="+62" type="tel" required="" inputmode="tel" autocomplete="tel">
+								</div>
+								<button class="btn ever-popup-btn" type="submit">PESAN</button>
+							</form>
+							<p class="igor-para-underform">
+								Diskon 50% berlaku hingga
+								<strong style="color:red">
+									<script> var currentDate = new Date(); currentDate.setTime(currentDate.getTime() - dayMilliseconds * DAYS); yyyy = currentDate.getFullYear(); mm = currentDate.getMonth() + 1; dd = currentDate.getDate(); if (mm < 10) { mm = '0' + mm; } if (dd < 10) { dd = '0' + dd; } document.write(dd + '.' + mm + '.' + yyyy)</script>
+								</strong>
+							</p>
+							<div class="payment">
+								Pembayaran dilakukan ketika barang diterima
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>Hak Cipta © <script>document.write((new Date).getFullYear())</script> oleh <span target="_blank">Copyrightindex.com</span></p>
+			<p>Seluruh hak cipta. Dilarang memperbanyak, mendistribusikan, atau mentransmisikan dalam bentuk apa pun
+				atau dengan cara
+				apa pun, termasuk reproduksi, perekaman, atau alat elektronik atau mekanis lainnya tanpa izin tertulis
+				dari penerbit.
+				Kecuali dalam kasus referensi singkat dalam tinjauan dan implementasi non-komersial dan lainnya yang
+				diizinkan oleh
+				undang-undang hak cipta.</p>
+		</footer>
+
+		<script src="./js/slick.min.js"></script>
+		<script src="./js/script.js"></script>
+	</div>
+</body>
+
+</html>

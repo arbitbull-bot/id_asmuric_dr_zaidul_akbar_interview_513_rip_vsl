@@ -1,0 +1,1 @@
+GitHub Pages preview. Upload the contents of this folder to the repository root. Keep prelanding/ and its back2/ subfolder. Forms are demo-only. Production requires PHP, q.php and the event proxy on the team server.

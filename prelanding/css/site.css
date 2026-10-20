@@ -1,0 +1,19 @@
+#container_video{max-width:720px;isolation:isolate}
+#play{height:auto;margin:0;background:none;font-size:inherit;transition:none}
+#play>div{max-width:85%;width:auto}
+.spinner-container{top:0;left:0;transform:none}
+.spinner-sub-container{position:static;transform:none;text-align:center}
+.spinner{width:auto;height:auto;border:0;border-radius:0;animation:none;display:inline}
+#progress-container{max-width:720px;margin:20px auto 0}
+#order{padding:24px;box-sizing:border-box;text-align:center;background:#fff;border:2px solid #d87ea4;border-radius:15px}
+#order input[type=hidden]{display:none}
+#order .product{max-width:280px;width:100%;height:auto}
+#order .price-text{font-size:24px}
+#order .new-price{font-size:30px;font-weight:700;color:#d00040}
+#order .timer{font-size:28px;font-weight:700;color:#d00040}
+#order button{background:#d00040;border:0;color:#fff;border-radius:8px;font-size:20px}
+#order input{border:1px solid #aaa;border-radius:6px;font-size:16px}
+#comment-component-text .comment{opacity:1;display:flex}
+@media(max-width:480px){#order{padding:16px}#play h4{font-size:18px;margin:8px 0}}
+
+#play h4{margin:8px 0;font-size:clamp(16px,3.5vw,23px);line-height:1.4}
